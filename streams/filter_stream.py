@@ -1,4 +1,4 @@
-from .junction_stream import JunctionStream
+from streams.core_streams.junction_stream import JunctionStream
 
 
 class FilterStream(JunctionStream):

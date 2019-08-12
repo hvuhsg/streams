@@ -1,4 +1,4 @@
-from .basic_stream import BasicStream
+from streams.core_streams.basic_stream import BasicStream
 
 
 class PrintStream(BasicStream):

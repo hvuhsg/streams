@@ -1,6 +1,6 @@
 from functools import wraps
 
-from .basic_stream import BasicStream
+from streams.core_streams.basic_stream import BasicStream
 
 
 def stream_validate(func):

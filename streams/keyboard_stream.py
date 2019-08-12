@@ -1,5 +1,5 @@
-from .basic_stream import BasicStream
-from .input_stream import InputStream
+from streams.core_streams.basic_stream import BasicStream
+from streams.core_streams.input_stream import InputStream
 
 __all__ = ["KeyboardStream"]
 

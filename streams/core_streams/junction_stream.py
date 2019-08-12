@@ -1,7 +1,7 @@
 from threading import current_thread
 
-from .basic_stream import BasicStream
-from .Helpers import check_stream
+from streams.core_streams.basic_stream import BasicStream
+from streams.Helpers import check_stream
 
 
 class JunctionStream(BasicStream):

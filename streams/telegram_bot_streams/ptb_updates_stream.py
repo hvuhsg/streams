@@ -1,8 +1,9 @@
-from telegram.ext import Updater, Filters, MessageHandler
 from time import sleep
 
-from ..basic_stream import BasicStream
-from ..input_stream import InputStream
+from telegram.ext import Updater, Filters, MessageHandler
+
+from streams.core_streams.basic_stream import BasicStream
+from streams.core_streams.input_stream import InputStream
 
 
 class PTBUpdatesStream(BasicStream, InputStream):
@@ -29,4 +30,4 @@ class PTBUpdatesStream(BasicStream, InputStream):
         if not self._messages:
             sleep(0.5)
             return
-        return self._messages.pop()
+        return self._messages.pop(-1)

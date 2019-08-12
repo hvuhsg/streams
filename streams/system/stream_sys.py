@@ -1,8 +1,8 @@
-from uuid import uuid4
 import logging
+from uuid import uuid4
 
-from .Helpers import class_stream_validate
-from .input_stream import InputStream
+from streams.core_streams.input_stream import InputStream
+from streams.Helpers import class_stream_validate
 
 
 class StreamSystem(object):
