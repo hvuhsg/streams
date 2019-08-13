@@ -33,8 +33,9 @@ class StreamSystem(object):
             stream = stream.next_stream()
 
     def run(self):
-        for input_stream in self._input_streams:  # can be turn to thread system
-            self.stream_loop(input_stream)
+        while True:
+            for input_stream in self._input_streams:  # can be turn to thread system
+                self.stream_loop(input_stream)
 
     def run_loop(self):
         while not self._close:
